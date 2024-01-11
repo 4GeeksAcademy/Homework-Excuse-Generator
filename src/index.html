@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Excuses Generator</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid bg-light text-center py-3 mb-4">
+      <h1>Excuses Generator</h1>
+    </div>
+
+    <div class="d-flex flex-column px-2">
+      <div class="d-flex flex-row py-3" style="height: 300px;">
+        <div class="px-2 text-center border-end border-primary w-50">
+          <h2>Simple Excuses</h2>
+          <p id="excuses">A dog stole my keys while I was praying</p>
+          <button id="excusesBtnENG" type="button" class="btn bg-primary">
+            Generate
+          </button>
+        </div>
+
+        <div class="px-2 text-center border-start border-primary w-50">
+          <h2>Better Excuses</h2>
+          <p id="betterExcuses">
+            Simon Bolivar revived and told me not to go out of my house, that's
+            why I stayed on bed.
+          </p>
+          <button id="betterExcusesBtnENG" type="button" class="btn bg-primary">
+            Generate
+          </button>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row py-3 px-2" style="height: 300px;">
+        <div class="px-2 text-center border-end border-primary w-50">
+          <h2>Excusas Simples</h2>
+          <p id="excusa">Un ladrón destruyó mis llaves durante mi almuerzo</p>
+          <button id="excusesBtnESP" type="button" class="btn bg-primary">
+            Generar
+          </button>
+        </div>
+
+        <div class="px-2 text-center border-start border-primary w-50">
+          <h2>Mejores Excusas</h2>
+          <p id="mejorExcusa">
+            Un chico volo y destruyo un auto con su rasho laser y por eso no
+            pude ir al trabajo
+          </p>
+          <button id="betterExcusesBtnESP" type="button" class="btn bg-primary">
+            Generar
+          </button>
+        </div>
       </div>
     </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
